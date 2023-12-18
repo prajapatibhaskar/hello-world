@@ -25,12 +25,3 @@ export default function Home() {
     </main>
   )
 }
-
-// a component
-const User = (props) => {
-  return (
-    <div>
-      <h2>Username is {props.name}</h2>
-    </div>
-  )
-}
