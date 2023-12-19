@@ -12,7 +12,7 @@ const Login = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>
-        <h1>Login Page</h1>
+        <h1 className="heading">Login Page</h1>
         <br />
         <button onClick={() => navigate("stafflogin")}>Staff Login</button>
         <br /> <br />
