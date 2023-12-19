@@ -8,7 +8,12 @@ export default function Home() {
 
   // regular function 
   const fruit = () => {
-    setFruitName(fruitName === "Apple🍎" ? "Orange🍊" : "Apple🍎")
+    const fruits = ["Orange🍊", "Apple🍎", "Banana🍌", "Pear🍐", "Watermelon🍉", "Pineapple🍍"];
+    let randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+    if (randomFruit == fruitName){
+      randomFruit = fruits[(fruits.indexOf(randomFruit) + 1) % fruits.length];
+    }
+    setFruitName(randomFruit)
   }
 
   // a component
