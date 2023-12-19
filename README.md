@@ -1,2 +1,2 @@
-# First NEXT-JS App 😎
-## Trying out next-js
+# First Next JS App 😎
+## Trying out Next JS
