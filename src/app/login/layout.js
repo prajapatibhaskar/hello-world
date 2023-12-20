@@ -6,11 +6,17 @@ import { usePathname } from "next/navigation";
 
 export default function Layout({ children }) {
   const currentPath = usePathname();
-  console.log(currentPath);
+
+  // List of path-names on which common-layout should hide
+  const hideOnListedPaths = [
+    "/login/stafflogin",
+    "/login/hodlogin",
+    "/login/principallogin",
+  ];
 
   return (
     <div>
-      {currentPath != "/login/stafflogin" ? (
+      {!hideOnListedPaths.includes(currentPath) ? (
         <ul className="login-menu">
           <li>
             <h4>Login Navigation</h4>
@@ -23,6 +29,9 @@ export default function Layout({ children }) {
           </li>
           <li>
             <Link href={"/login/stafflogin"}>Staff Login</Link>
+          </li>
+          <li>
+            <Link href={"/login/hodlogin"}>Hod Login</Link>
           </li>
         </ul>
       ) : (
