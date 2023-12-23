@@ -7,22 +7,22 @@ const Product = () => {
     <div>
       <Link href={"/home"}>Home Page</Link>
       <h1>
-        <strong>Products List</strong>
+        Products List
       </h1>
-      <h1>
+      <h3>
         <Link href={"products/1"}>Product 1</Link>
-      </h1>
-      <h1>
+      </h3>
+      <h3>
         <Link href={"products/2"}>Product 2</Link>
-      </h1>
-      <h1>
+      </h3>
+      <h3>
         <Link href={"products/3"} replace>
           Product 3
         </Link>
-      </h1>
-      <h1>
+      </h3>
+      <h3>
         <Link href={`products/${productId}`}>Product {productId}</Link>
-      </h1>
+      </h3>
     </div>
   );
 };

@@ -1,0 +1,9 @@
+.activeNavLinkStyle {
+    margin-right: 10px;
+    color: blue;
+    font-weight: bold;
+}
+
+.inactiveNavLinkStyle{
+    margin-right: 10px;
+  };
