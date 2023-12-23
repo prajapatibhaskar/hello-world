@@ -1,10 +1,8 @@
 const HodLogin = () => {
     return(
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div>
-                <h1 className="heading">Hod Login</h1>
-            </div>
-        </main>
+        <div style={{padding: '20px'}}>
+            <h1 className="heading">Hod Login</h1>
+        </div>
     )
 }
 

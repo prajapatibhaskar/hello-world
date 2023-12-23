@@ -22,11 +22,11 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div  style={{padding: '20px'}}>
       <h1>Events, Functions and States.</h1>
       <h1>Fruit: {fruitName}</h1>
       <button onClick={fruit}>Click me</button>
       <InnerComponent />
-    </main>
+    </div>
   )
 }

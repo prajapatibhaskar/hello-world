@@ -10,15 +10,13 @@ const Login = () => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
+      <div  style={{padding: '20px'}}>
         <h1 className="heading">Login Page</h1>
         <br />
         <button onClick={() => navigate("stafflogin")}>Staff Login</button>
         <br /> <br />
         <button onClick={() => navigate("studentlogin")}>Student Login</button>
       </div>
-    </main>
   );
 };
 
