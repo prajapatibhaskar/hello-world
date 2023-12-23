@@ -14,7 +14,7 @@ const StudentList = () => {
       <ul className="student-list">
         {students.map((student) => (
           <li key={student.id}>
-            <Link href={`/studentlist/${student.id}`}>{student.name}</Link>
+            <Link href={`/studentlist/${student.name}`}>{student.name}</Link>
           </li>
         ))}
       </ul>
