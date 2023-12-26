@@ -2,8 +2,19 @@
 
 import { notFound } from "next/navigation";
 
+// returns random integer between 0 and count (0 inclusive)
+const getRandomInt = (count) => {
+    return Math.floor(Math.random() * count)
+}
+
 const ReviewDetail = ({params}) => {
-    console.log(params);
+    
+    // Random number to simulate a runtime error
+    const random = getRandomInt(2);
+    if(random === 1){
+        throw new Error("Error...")
+    }
+
     if(parseInt(params.reviewId) > 1000){
         notFound();
     }

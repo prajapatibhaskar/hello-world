@@ -16,6 +16,7 @@ const AuthLayout = ({ children }) => {
 
   // an array of objects {name, href}
   const navLinks = [
+    { name: "Login", href: "/login" },
     { name: "Register", href: "/register" },
     { name: "Signin", href: "/signin" },
     { name: "Forgot Password", href: "/forgot-password" },

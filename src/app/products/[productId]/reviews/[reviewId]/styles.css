@@ -1,0 +1,19 @@
+.error-box {
+    /* Basic styling */
+    width: 150px;
+    height: 70px;
+    background-color: #ffe6e6;  /* Slightly Red background */
+    color: rgb(250, 56, 56);             /* Red text */
+    padding: 10px 20px;      /* Padding around the text */
+    border: 2px solid rgb(250, 56, 56);
+    border-radius: 9px;      /* Rounded corners */
+    margin: 10px;            /* Add some space around the box */
+  
+    /* Font styling (optional) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;  /* Use a sans-serif font */
+    text-align: center;       /* Center the text */
+    font-size: larger;
+  }
