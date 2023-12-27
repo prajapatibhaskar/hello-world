@@ -10,14 +10,14 @@ const getRandomInt = (count) => {
 const ReviewDetail = ({params}) => {
     
     // Random number to simulate a runtime error
-    const random = getRandomInt(2);
-    if(random === 1){
-        throw new Error("Error...")
-    }
+    // const random = getRandomInt(2);
+    // if(random === 1){
+    //     throw new Error("Error Loading Review...")
+    // }
 
-    if(parseInt(params.reviewId) > 1000){
-        notFound();
-    }
+    // if(parseInt(params.reviewId) > 1000){
+    //     notFound();
+    // }
     return(
         <div>
             <h1>Review {params.reviewId} for product {params.productId}</h1>
