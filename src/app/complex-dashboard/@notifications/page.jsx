@@ -1,6 +1,8 @@
+import delay from "@/lib/delay";
 import Link from "next/link";
 
-export const Notifications = () => {
+export const Notifications = async () => {
+  await delay(4000)
   return (
     <div>
       <div>Notifications</div>
