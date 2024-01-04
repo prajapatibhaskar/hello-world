@@ -1,11 +1,11 @@
 export const RevenueMetrics = () => {
-  const session = null;
+  // const session = null;
 
-  if (!session) {
-    throw new Error("Error Loading Revenue Metrics...");
-  }
+  // if (!session) {
+  //   throw new Error("Error Loading Revenue Metrics...");
+  // }
 
-  return <div className="revenue-box">Revenue Metrics</div>;
+  return <div>Revenue Metrics</div>;
 };
 
 export default RevenueMetrics;

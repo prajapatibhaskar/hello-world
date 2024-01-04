@@ -1,10 +1,12 @@
-export const Notifications = async () => {
+import Link from "next/link";
 
-  await new Promise((resolve) => setTimeout(resolve, 4000));
-
+export const Notifications = () => {
   return (
-    <div>Notifications</div>
-  )
-}
+    <div>
+      <div>Notifications</div>
+      <Link href="/complex-dashboard/archived">Archived</Link>    {/* Soft Navigation*/}
+    </div>
+  );
+};
 
 export default Notifications;
